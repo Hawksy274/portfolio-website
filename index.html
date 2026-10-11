@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nishant Sinha: ECE undergrad at Tezpur University building machine learning and computer vision systems. ML intern at Innect Technologies; Google Solution Challenge 2026 top-100 team in India.">
 <title>Nishant Sinha — ECE Engineer & ML Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,7 +60,7 @@
   .role-pills { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
   .rpill { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; border: 1px solid var(--border); color: var(--text-muted); font-weight: 500; }
   .rpill.hot { border-color: rgba(255,87,34,0.4); color: var(--orange); background: rgba(255,87,34,0.08); }
-  .hero-tagline { font-size: 18px; color: var(--text-muted); max-width: 540px; line-height: 1.65; margin-bottom: 40px; font-weight: 300; }
+  .hero-tagline { font-size: 18px; color: var(--text-muted); max-width: 600px; line-height: 1.65; margin-bottom: 40px; font-weight: 300; }
   .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
   .btn-p { display: inline-flex; align-items: center; gap: 8px; background: var(--orange); color: #fff; padding: 14px 28px; border-radius: 8px; font-weight: 500; font-size: 15px; text-decoration: none; font-family: var(--font-body); transition: background .2s, transform .15s; border: none; cursor: none; }
   .btn-p:hover { background: var(--orange-dim); transform: translateY(-2px); }
@@ -102,13 +103,10 @@
   .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
   .ski { background: var(--bg3); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; transition: border-color .2s, transform .2s; }
   .ski:hover { border-color: rgba(255,87,34,0.3); transform: translateY(-2px); }
-  .ski-name { font-size: 14px; font-weight: 500; margin-bottom: 10px; color: var(--text); }
-  .ski-bar { height: 2px; background: var(--border); border-radius: 2px; overflow: hidden; }
-  .ski-fill { height: 100%; background: var(--orange); border-radius: 2px; width: 0; transition: width 1.2s cubic-bezier(.25,.46,.45,.94); }
-  .ski-pct { font-size: 11px; color: var(--text-dim); margin-top: 5px; text-align: right; }
+  .ski-name { font-size: 14px; font-weight: 500; color: var(--text); line-height: 1.4; }
 
   #projects { background: var(--bg2); }
-  .proj-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 28px; }
+  .proj-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 40px; }
   .proj-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color .25s, transform .25s; cursor: none; }
   .proj-card:hover { border-color: var(--orange); transform: translateY(-6px); }
   .proj-thumb { height: 180px; display: flex; align-items: center; justify-content: center; font-size: 52px; position: relative; overflow: hidden; }
@@ -117,6 +115,8 @@
   .pt2 { background: linear-gradient(135deg,#000f1a,#002d1a); }
   .pt3 { background: linear-gradient(135deg,#0a000f,#1a002d); }
   .pt4 { background: linear-gradient(135deg,#0a0a00,#1a1a00); }
+  .pt5 { background: linear-gradient(135deg,#00100f,#002a2a); }
+  .pt6 { background: linear-gradient(135deg,#0f0a00,#2a1d00); }
   .proj-body { padding: 22px; }
   .proj-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
   .ptag { font-size: 11px; letter-spacing: .05em; text-transform: uppercase; padding: 3px 9px; border-radius: 4px; background: rgba(255,87,34,0.1); color: var(--orange); font-weight: 500; }
@@ -146,6 +146,7 @@
 
   #achievements { background: var(--bg2); }
   .ach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 56px; }
+  .ach-two { grid-template-columns: repeat(2, 1fr); max-width: 1000px; }
   .acard { background: var(--bg3); border: 1px solid var(--border); border-radius: 14px; padding: 28px 24px; transition: border-color .25s, transform .25s; position: relative; overflow: hidden; }
   .acard::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--orange); transform: scaleX(0); transition: transform .3s; }
   .acard:hover { border-color: rgba(255,87,34,0.3); transform: translateY(-4px); }
@@ -155,21 +156,7 @@
   .ach-desc { font-size: 13px; color: var(--text-muted); line-height: 1.55; font-weight: 300; }
   .ach-desc strong { color: var(--orange); font-weight: 500; }
 
-  #testimonials { background: var(--bg); }
-  .test-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 56px; }
-  .tcard { background: var(--bg3); border: 1px solid var(--border); border-radius: 16px; padding: 28px; transition: border-color .25s, transform .25s; }
-  .tcard:hover { border-color: rgba(255,87,34,0.25); transform: translateY(-4px); }
-  .qmark { font-family: var(--font-head); font-size: 56px; line-height: .8; color: var(--orange); opacity: .35; margin-bottom: 14px; font-weight: 800; }
-  .ttext { font-size: 14px; color: var(--text-muted); line-height: 1.75; margin-bottom: 22px; font-weight: 300; font-style: italic; }
-  .tauthor { display: flex; align-items: center; gap: 12px; }
-  .av { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 14px; font-weight: 700; color: #fff; flex-shrink: 0; }
-  .av1 { background: linear-gradient(135deg,#ff5722,#e91e63); }
-  .av2 { background: linear-gradient(135deg,#2196f3,#00bcd4); }
-  .av3 { background: linear-gradient(135deg,#4caf50,#8bc34a); }
-  .aname { font-size: 14px; font-weight: 600; color: var(--text); }
-  .arole { font-size: 12px; color: var(--text-muted); }
-
-  #contact { background: var(--bg2); text-align: center; padding: 120px 60px; }
+  #contact { background: var(--bg); text-align: center; padding: 120px 60px; }
   .contact-inner { max-width: 620px; margin: 0 auto; }
   .ctitle { font-family: var(--font-head); font-size: clamp(36px,5vw,60px); font-weight: 800; letter-spacing: -2px; color: var(--text); line-height: 1.05; margin-bottom: 18px; }
   .ctitle em { color: var(--orange); font-style: normal; }
@@ -203,7 +190,6 @@
     .about-grid, .exp-grid { grid-template-columns: 1fr; gap: 40px; }
     .proj-grid { grid-template-columns: 1fr 1fr; }
     .ach-grid { grid-template-columns: 1fr 1fr; }
-    .test-grid { grid-template-columns: 1fr 1fr; }
     .skills-layout { grid-template-columns: 1fr; }
     .skill-tabs { flex-direction: row; flex-wrap: wrap; }
   }
@@ -212,7 +198,7 @@
     .nav-links { display: none; }
     section { padding: 60px 18px; }
     #hero { padding: 100px 18px 60px; }
-    .proj-grid, .ach-grid, .test-grid { grid-template-columns: 1fr; }
+    .proj-grid, .ach-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: 1fr 1fr; }
     footer { flex-direction: column; gap: 6px; text-align: center; }
@@ -223,7 +209,7 @@
 <body>
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
-<div id="toast">&#10003; Message sent! I'll get back soon.</div>
+<div id="toast">&#10003; Opening Gmail&hellip;</div>
 
 <!-- NAV -->
 <nav id="navbar">
@@ -247,14 +233,15 @@
     <h1>Nishant<br><em>Sinha</em></h1>
     <div class="role-pills">
       <span class="rpill hot">ML Developer</span>
+      <span class="rpill hot">Computer Vision</span>
       <span class="rpill hot">Data Analyst</span>
       <span class="rpill hot">Frontend Dev</span>
       <span class="rpill">&#8594; Data Engineering</span>
     </div>
-    <p class="hero-tagline">Building modern web experiences with data-driven intelligence. ECE undergrad at Tezpur University, passionate about ML, data, and clean frontend craft.</p>
+    <p class="hero-tagline">Machine learning and computer vision, from research notebooks to edge devices. ECE undergrad at Tezpur University, currently an ML intern at Innect Technologies and part of a top-100 team in India at Google Solution Challenge 2026.</p>
     <div class="hero-ctas">
       <a href="#projects" class="btn-p">View Projects <span>&#8599;</span></a>
-      <a href="mailto:nishantsinha3580@gmail.com" class="btn-s">Get In Touch</a>
+      <a href="#contact" class="btn-s">Get In Touch</a>
     </div>
   </div>
   <div class="scroll-hint"><span class="sline"></span>Scroll to explore</div>
@@ -266,10 +253,11 @@
   <h2 class="sec-title">Engineer at the intersection<br>of Software, Data &amp; Intelligence</h2>
   <div class="about-grid">
     <div class="about-text reveal">
-      <p>I'm <strong>Nishant Sinha</strong>, a <em>B.Tech Electronics &amp; Communication Engineering</em> student at Tezpur University (Class of 2027). I work at the crossroads of machine learning, embedded hardware, and modern web development.</p>
-      <p>I'm currently exploring <em>data engineering</em> as my next frontier &mdash; SQL pipelines, ETL workflows, and cloud data systems.</p>
+      <p>I'm <strong>Nishant Sinha</strong>, a <em>B.Tech Electronics &amp; Communication Engineering</em> student at Tezpur University (Class of 2027), working in the <em>AI / ML field</em> and building as a <em>frontend developer</em> on the side. Across four internships I've built ML systems for anomaly detection, speaker verification, protein&ndash;ligand prediction, and real-time face recognition on edge devices.</p>
+      <p>Alongside that, I'm exploring <em>data engineering</em> &mdash; SQL pipelines, ETL workflows, and cloud data systems. My team's <em>Guardian Saathi</em> healthcare app ranked among the top 100 teams in India at Google Solution Challenge 2026.</p>
       <div class="chips">
-        <span class="chip">PyTorch</span><span class="chip">Scikit-learn</span><span class="chip">TensorFlow</span>
+        <span class="chip">PyTorch</span><span class="chip">OpenCV</span><span class="chip">YOLOv8</span>
+        <span class="chip">Scikit-learn</span><span class="chip">TensorFlow</span>
         <span class="chip">ESP32</span><span class="chip">Arduino</span><span class="chip">C / C++</span>
         <span class="chip">Python</span><span class="chip">React.js</span><span class="chip">Firebase</span>
         <span class="chip">RDKit</span><span class="chip">Git</span><span class="chip">Figma</span>
@@ -284,7 +272,7 @@
       <div class="icard-row">
         <div class="icard">
           <div class="icard-lbl">Based In</div>
-          <div class="icard-val">Silchar, Assam</div>
+          <div class="icard-val">Guwahati, Assam</div>
           <div class="icard-sub">India</div>
         </div>
         <div class="icard">
@@ -301,56 +289,77 @@
 <section id="skills">
   <div class="sec-label">What I use</div>
   <h2 class="sec-title">Skills &amp; Tech Stack</h2>
-  <p class="sec-sub">My real toolkit &mdash; built through two research internships, academic projects, and self-directed learning.</p>
+  <p class="sec-sub">My real toolkit &mdash; built through four internships, academic projects, and self-directed learning.</p>
   <div class="skills-layout">
     <div class="skill-tabs reveal">
       <button class="skill-tab active" data-tab="ml">&#129302; ML &amp; Data Science</button>
+      <button class="skill-tab" data-tab="cv">&#128065; Computer Vision &amp; Edge AI</button>
       <button class="skill-tab" data-tab="embedded">&#128295; Embedded &amp; IoT</button>
       <button class="skill-tab" data-tab="frontend">&#128421; Frontend &amp; Web</button>
-      <button class="skill-tab" data-tab="tools">&#128295; Tools</button>
+      <button class="skill-tab" data-tab="tools">&#128736; Tools</button>
     </div>
     <div class="reveal rd2">
       <div class="skills-panel active" id="panel-ml">
         <div class="skills-grid">
-          <div class="ski"><div class="ski-name">Python</div><div class="ski-bar"><div class="ski-fill" data-width="88"></div></div><div class="ski-pct">88%</div></div>
-          <div class="ski"><div class="ski-name">Scikit-learn</div><div class="ski-bar"><div class="ski-fill" data-width="82"></div></div><div class="ski-pct">82%</div></div>
-          <div class="ski"><div class="ski-name">PyTorch</div><div class="ski-bar"><div class="ski-fill" data-width="72"></div></div><div class="ski-pct">72%</div></div>
-          <div class="ski"><div class="ski-name">TensorFlow</div><div class="ski-bar"><div class="ski-fill" data-width="65"></div></div><div class="ski-pct">65%</div></div>
-          <div class="ski"><div class="ski-name">Pandas / NumPy</div><div class="ski-bar"><div class="ski-fill" data-width="80"></div></div><div class="ski-pct">80%</div></div>
-          <div class="ski"><div class="ski-name">Matplotlib</div><div class="ski-bar"><div class="ski-fill" data-width="78"></div></div><div class="ski-pct">78%</div></div>
-          <div class="ski"><div class="ski-name">RDKit</div><div class="ski-bar"><div class="ski-fill" data-width="68"></div></div><div class="ski-pct">68%</div></div>
-          <div class="ski"><div class="ski-name">SciPy / Lifelines</div><div class="ski-bar"><div class="ski-fill" data-width="60"></div></div><div class="ski-pct">60%</div></div>
-          <div class="ski"><div class="ski-name">Feature Engineering</div><div class="ski-bar"><div class="ski-fill" data-width="75"></div></div><div class="ski-pct">75%</div></div>
+          <div class="ski"><div class="ski-name">Python</div></div>
+          <div class="ski"><div class="ski-name">Scikit-learn</div></div>
+          <div class="ski"><div class="ski-name">PyTorch</div></div>
+          <div class="ski"><div class="ski-name">TensorFlow</div></div>
+          <div class="ski"><div class="ski-name">Deep Learning (CNNs)</div></div>
+          <div class="ski"><div class="ski-name">Anomaly Detection (Isolation Forest)</div></div>
+          <div class="ski"><div class="ski-name">Pandas / NumPy</div></div>
+          <div class="ski"><div class="ski-name">Matplotlib</div></div>
+          <div class="ski"><div class="ski-name">Feature Engineering</div></div>
+          <div class="ski"><div class="ski-name">RDKit</div></div>
+          <div class="ski"><div class="ski-name">SciPy / Lifelines</div></div>
+          <div class="ski"><div class="ski-name">Streamlit</div></div>
+        </div>
+      </div>
+      <div class="skills-panel" id="panel-cv">
+        <div class="skills-grid">
+          <div class="ski"><div class="ski-name">OpenCV</div></div>
+          <div class="ski"><div class="ski-name">Object Detection (YOLOv8)</div></div>
+          <div class="ski"><div class="ski-name">Multi-Object Tracking (ByteTrack)</div></div>
+          <div class="ski"><div class="ski-name">Face Recognition</div></div>
+          <div class="ski"><div class="ski-name">Feature Embeddings</div></div>
+          <div class="ski"><div class="ski-name">Model Inference</div></div>
+          <div class="ski"><div class="ski-name">Edge AI</div></div>
+          <div class="ski"><div class="ski-name">NVIDIA Jetson Orin Nano</div></div>
+          <div class="ski"><div class="ski-name">Raspberry Pi</div></div>
+          <div class="ski"><div class="ski-name">RTSP Streams</div></div>
         </div>
       </div>
       <div class="skills-panel" id="panel-embedded">
         <div class="skills-grid">
-          <div class="ski"><div class="ski-name">C / C++</div><div class="ski-bar"><div class="ski-fill" data-width="85"></div></div><div class="ski-pct">85%</div></div>
-          <div class="ski"><div class="ski-name">ESP32 / ESP8266</div><div class="ski-bar"><div class="ski-fill" data-width="82"></div></div><div class="ski-pct">82%</div></div>
-          <div class="ski"><div class="ski-name">Arduino IDE</div><div class="ski-bar"><div class="ski-fill" data-width="88"></div></div><div class="ski-pct">88%</div></div>
-          <div class="ski"><div class="ski-name">Sensor Integration</div><div class="ski-bar"><div class="ski-fill" data-width="80"></div></div><div class="ski-pct">80%</div></div>
-          <div class="ski"><div class="ski-name">WiFi Communication</div><div class="ski-bar"><div class="ski-fill" data-width="75"></div></div><div class="ski-pct">75%</div></div>
-          <div class="ski"><div class="ski-name">Circuit Design</div><div class="ski-bar"><div class="ski-fill" data-width="72"></div></div><div class="ski-pct">72%</div></div>
+          <div class="ski"><div class="ski-name">C / C++</div></div>
+          <div class="ski"><div class="ski-name">ESP32 / ESP8266</div></div>
+          <div class="ski"><div class="ski-name">Arduino IDE</div></div>
+          <div class="ski"><div class="ski-name">MPU6050</div></div>
+          <div class="ski"><div class="ski-name">Ultrasonic Sensors</div></div>
+          <div class="ski"><div class="ski-name">Sensor Integration</div></div>
+          <div class="ski"><div class="ski-name">WiFi Communication</div></div>
+          <div class="ski"><div class="ski-name">Circuit Design</div></div>
         </div>
       </div>
       <div class="skills-panel" id="panel-frontend">
         <div class="skills-grid">
-          <div class="ski"><div class="ski-name">HTML / CSS</div><div class="ski-bar"><div class="ski-fill" data-width="88"></div></div><div class="ski-pct">88%</div></div>
-          <div class="ski"><div class="ski-name">JavaScript</div><div class="ski-bar"><div class="ski-fill" data-width="80"></div></div><div class="ski-pct">80%</div></div>
-          <div class="ski"><div class="ski-name">React.js</div><div class="ski-bar"><div class="ski-fill" data-width="72"></div></div><div class="ski-pct">72%</div></div>
-          <div class="ski"><div class="ski-name">API Integration</div><div class="ski-bar"><div class="ski-fill" data-width="78"></div></div><div class="ski-pct">78%</div></div>
-          <div class="ski"><div class="ski-name">Firebase</div><div class="ski-bar"><div class="ski-fill" data-width="70"></div></div><div class="ski-pct">70%</div></div>
-          <div class="ski"><div class="ski-name">UI/UX Design</div><div class="ski-bar"><div class="ski-fill" data-width="68"></div></div><div class="ski-pct">68%</div></div>
+          <div class="ski"><div class="ski-name">HTML / CSS</div></div>
+          <div class="ski"><div class="ski-name">JavaScript</div></div>
+          <div class="ski"><div class="ski-name">React.js</div></div>
+          <div class="ski"><div class="ski-name">API Integration</div></div>
+          <div class="ski"><div class="ski-name">Firebase</div></div>
+          <div class="ski"><div class="ski-name">UI/UX Design</div></div>
         </div>
       </div>
       <div class="skills-panel" id="panel-tools">
         <div class="skills-grid">
-          <div class="ski"><div class="ski-name">Git / GitHub</div><div class="ski-bar"><div class="ski-fill" data-width="85"></div></div><div class="ski-pct">85%</div></div>
-          <div class="ski"><div class="ski-name">Figma</div><div class="ski-bar"><div class="ski-fill" data-width="72"></div></div><div class="ski-pct">72%</div></div>
-          <div class="ski"><div class="ski-name">Wokwi Simulator</div><div class="ski-bar"><div class="ski-fill" data-width="78"></div></div><div class="ski-pct">78%</div></div>
-          <div class="ski"><div class="ski-name">Canva</div><div class="ski-bar"><div class="ski-fill" data-width="80"></div></div><div class="ski-pct">80%</div></div>
-          <div class="ski"><div class="ski-name">Android (Basic)</div><div class="ski-bar"><div class="ski-fill" data-width="55"></div></div><div class="ski-pct">55%</div></div>
-          <div class="ski"><div class="ski-name">VS Code</div><div class="ski-bar"><div class="ski-fill" data-width="93"></div></div><div class="ski-pct">93%</div></div>
+          <div class="ski"><div class="ski-name">Git / GitHub</div></div>
+          <div class="ski"><div class="ski-name">Figma</div></div>
+          <div class="ski"><div class="ski-name">Wokwi Simulator</div></div>
+          <div class="ski"><div class="ski-name">Canva</div></div>
+          <div class="ski"><div class="ski-name">Vercel</div></div>
+          <div class="ski"><div class="ski-name">Android (Java / Kotlin)</div></div>
+          <div class="ski"><div class="ski-name">VS Code</div></div>
         </div>
       </div>
     </div>
@@ -361,34 +370,46 @@
 <section id="projects">
   <div class="sec-label">What I've built</div>
   <h2 class="sec-title">Featured Projects</h2>
-  <p class="sec-sub">Research-backed builds with real, measurable results.</p>
-
-  <!-- Portfolio pinned at top -->
-  <div style="margin-top:40px; margin-bottom:28px; padding:28px 32px; background:var(--bg3); border:1px solid rgba(255,87,34,0.25); border-radius:16px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;" class="reveal">
-    <div>
-      <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);font-weight:500;margin-bottom:6px;">Latest Project</div>
-      <div style="font-family:var(--font-head);font-size:20px;font-weight:700;letter-spacing:-.3px;margin-bottom:6px;">This Portfolio Website</div>
-      <div style="font-size:13px;color:var(--text-muted);font-weight:300;">Built with vanilla HTML, CSS &amp; JS &mdash; custom cursor, scroll animations, tabbed skill system, and responsive layout. My first shipped portfolio project.</div>
-    </div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span>
-    </div>
-  </div>
+  <p class="sec-sub">Research internships, a top-100 Google Solution Challenge team project, and builds that run on real devices.</p>
 
   <div class="proj-grid">
     <div class="proj-card reveal">
-      <div class="proj-thumb pt1">&#128266;</div>
+      <div class="proj-thumb pt5">&#128100;</div>
       <div class="proj-body">
-        <div class="proj-tags"><span class="ptag">PyTorch</span><span class="ptag">CNN</span><span class="ptag">Audio ML</span></div>
-        <div class="proj-title">CNN Speaker Verification System</div>
-        <div class="proj-desc">Deep learning speaker verification using CNNs on audio features at DUIET. Built full speech preprocessing and feature extraction pipeline. Tested on 100+ audio samples with detailed performance analysis.</div>
+        <div class="proj-tags"><span class="ptag">YOLOv8</span><span class="ptag">ByteTrack</span><span class="ptag">Edge AI</span></div>
+        <div class="proj-title">Edge Face Recognition for CCTV</div>
+        <div class="proj-desc">Privacy-preserving computer vision system for real-time CCTV surveillance. Person detection and tracking with YOLOv8n and ByteTrack, face embeddings and identity matching, running on NVIDIA Jetson Orin Nano and Raspberry Pi with RTSP streams.</div>
         <div class="proj-metrics">
-          <div class="pmet">100+ <span>samples tested</span></div>
-          <div class="pmet">DUIET <span>Research Internship</span></div>
+          <div class="pmet">In progress <span>Innect Technologies</span></div>
+          <div class="pmet">On-device <span>inference &amp; storage</span></div>
         </div>
       </div>
     </div>
     <div class="proj-card reveal rd2">
+      <div class="proj-thumb pt1">&#128737;</div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="ptag">Android</span><span class="ptag">Java / Kotlin</span><span class="ptag">Firebase</span></div>
+        <div class="proj-title">Guardian Saathi</div>
+        <div class="proj-desc">Android healthcare surveillance app co-developed with a team. Core features built in Java/Kotlin with a Firebase backend for real-time data sync and alerts.</div>
+        <div class="proj-metrics">
+          <div class="pmet">Top 100 <span>teams in India</span></div>
+          <div class="pmet">Google <span>Solution Challenge 2026</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card reveal rd3">
+      <div class="proj-thumb pt6">&#127783;</div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">Streamlit</span><span class="ptag">Isolation Forest</span></div>
+        <div class="proj-title">Weather Sensor Anomaly Dashboard</div>
+        <div class="proj-desc">Real-time dashboard in Python and Streamlit for weather and environmental sensor data. An Isolation Forest model flags anomalous readings across multiple meteorological parameters, with preprocessing and visualization pipelines for analysts.</div>
+        <div class="proj-metrics">
+          <div class="pmet">IMD <span>Shillong, ML Internship</span></div>
+          <div class="pmet">Multi-parameter <span>anomaly detection</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card reveal">
       <div class="proj-thumb pt2">&#129516;</div>
       <div class="proj-body">
         <div class="proj-tags"><span class="ptag">Scikit-learn</span><span class="ptag">RDKit</span><span class="ptag">Bioinformatics</span></div>
@@ -400,17 +421,41 @@
         </div>
       </div>
     </div>
+    <div class="proj-card reveal rd2">
+      <div class="proj-thumb pt3">&#128266;</div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="ptag">PyTorch</span><span class="ptag">CNN</span><span class="ptag">Audio ML</span></div>
+        <div class="proj-title">CNN Speaker Verification System</div>
+        <div class="proj-desc">Deep learning speaker verification using CNNs on audio features at DUIET. Built the full speech preprocessing and feature extraction pipeline and analyzed performance on 100+ audio samples.</div>
+        <div class="proj-metrics">
+          <div class="pmet">100+ <span>samples tested</span></div>
+          <div class="pmet">DUIET <span>Research Internship</span></div>
+        </div>
+      </div>
+    </div>
     <div class="proj-card reveal rd3">
-      <div class="proj-thumb pt3">&#128249;</div>
+      <div class="proj-thumb pt4">&#128249;</div>
       <div class="proj-body">
         <div class="proj-tags"><span class="ptag">ESP32</span><span class="ptag">C++</span><span class="ptag">Firebase</span><span class="ptag">Android</span></div>
         <div class="proj-title">IoT CCTV Surveillance &amp; Alert System</div>
-        <div class="proj-desc">ESP32-based real-time surveillance system with instant mobile alerts. Android app with Firebase delivering live feed and push notifications within 2 seconds. 99% uptime with optimized C++ firmware.</div>
+        <div class="proj-desc">ESP32-based real-time surveillance system with instant mobile alerts. Android app with Firebase delivering the live feed and push notifications, running on optimized C++ firmware.</div>
         <div class="proj-metrics">
-          <div class="pmet">40% <span>faster response</span></div>
-          <div class="pmet">35% <span>fewer false positives</span></div>
+          <div class="pmet">ESP32 <span>C++ firmware</span></div>
+          <div class="pmet">Firebase <span>push alerts</span></div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- About this site -->
+  <div style="margin-top:28px; padding:28px 32px; background:var(--bg3); border:1px solid rgba(255,87,34,0.25); border-radius:16px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;" class="reveal">
+    <div>
+      <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);font-weight:500;margin-bottom:6px;">This Site</div>
+      <div style="font-family:var(--font-head);font-size:20px;font-weight:700;letter-spacing:-.3px;margin-bottom:6px;">This Portfolio Website</div>
+      <div style="font-size:13px;color:var(--text-muted);font-weight:300;">Built with vanilla HTML, CSS &amp; JS &mdash; custom cursor, scroll animations, tabbed skill system, and responsive layout. My first shipped portfolio project.</div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag">Vercel</span>
     </div>
   </div>
 </section>
@@ -423,6 +468,32 @@
     <div class="reveal">
       <div class="exp-col-h">Work &amp; Research</div>
       <div class="tl">
+        <div class="tli">
+          <div><div class="tldot"></div></div>
+          <div class="tlc">
+            <div class="tltop"><div class="tlrole">Machine Learning Intern</div><div class="tlperiod">Sep 2026 &ndash; Present</div></div>
+            <div class="tlorg">Innect Technologies &middot; Jorhat, Assam</div>
+            <ul class="tlbullets">
+              <li>Developing an edge-based, privacy-preserving computer vision system for real-time CCTV face recognition</li>
+              <li>Implementing person detection and multi-object tracking with YOLOv8n and ByteTrack to keep identities across frames</li>
+              <li>Working on face detection, facial embedding generation, and identity matching for surveillance footage</li>
+              <li>Contributing to an edge deployment pipeline for NVIDIA Jetson Orin Nano and Raspberry Pi with RTSP stream support</li>
+              <li>Working on local face-embedding storage and on-device inference to reduce cloud dependency and improve privacy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tli">
+          <div><div class="tldot"></div></div>
+          <div class="tlc">
+            <div class="tltop"><div class="tlrole">Machine Learning Intern</div><div class="tlperiod">Jun &ndash; Jul 2026</div></div>
+            <div class="tlorg">IMD &middot; India Meteorological Department, Shillong</div>
+            <ul class="tlbullets">
+              <li>Built a real-time anomaly detection dashboard in Python and Streamlit for weather and environmental sensor data</li>
+              <li>Implemented an Isolation Forest model to flag anomalous readings across multiple meteorological parameters</li>
+              <li>Designed data preprocessing and visualization pipelines to support monitoring by department analysts</li>
+            </ul>
+          </div>
+        </div>
         <div class="tli">
           <div><div class="tldot"></div></div>
           <div class="tlc">
@@ -443,7 +514,6 @@
             <ul class="tlbullets">
               <li>Developed Gradient Boost model achieving 97.5% accuracy for protein&ndash;ligand binding prediction</li>
               <li>Reduced model RMSE by 59% using RDKit-based feature engineering and tuning</li>
-              <li>Ensured 99% uptime with optimized C++ firmware and WiFi communication</li>
             </ul>
           </div>
         </div>
@@ -456,7 +526,7 @@
           <div><div class="tldot"></div></div>
           <div class="tlc">
             <div class="tltop"><div class="tlrole">B.Tech &mdash; ECE</div><div class="tlperiod">Jul 2023 &ndash; May 2027</div></div>
-            <div class="tlorg">Tezpur University &middot; Tezpur, Assam &middot;</div>
+            <div class="tlorg">Tezpur University &middot; Tezpur, Assam</div>
             <ul class="tlbullets">
               <li>Electronics &amp; Communication Engineering &mdash; focus on ML, signal processing &amp; IoT</li>
               <li>Active in research, workshops, and cross-domain projects</li>
@@ -485,17 +555,6 @@
             </ul>
           </div>
         </div>
-        <div class="tli">
-          <div><div class="tldot"></div></div>
-          <div class="tlc">
-            <div class="tltop"><div class="tlrole">Active Member</div><div class="tlperiod">Jul 2023 &ndash; Jun 2025</div></div>
-            <div class="tlorg">Robotics Society &middot; Tezpur University</div>
-            <ul class="tlbullets">
-              <li>Competed in regional robotics competitions</li>
-              <li>Hands-on expertise: Arduino, sensor integration &amp; autonomous navigation</li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -505,36 +564,16 @@
 <section id="achievements">
   <div class="sec-label">Wins &amp; milestones</div>
   <h2 class="sec-title">Achievements</h2>
-  <div class="ach-grid" style="grid-template-columns:1fr; max-width:520px;">
+  <div class="ach-grid ach-two">
     <div class="acard reveal">
+      <div class="ach-icon">&#127942;</div>
+      <div class="ach-title">Google Solution Challenge 2026 &mdash; Top 100 in India</div>
+      <div class="ach-desc">Ranked among the <strong>top 100 teams in India</strong> for Guardian Saathi, a healthcare surveillance Android app built with a team in Java/Kotlin and Firebase.</div>
+    </div>
+    <div class="acard reveal rd2">
       <div class="ach-icon">&#127885;</div>
       <div class="ach-title">INMO Qualifier &mdash; Top 300 Nationwide</div>
-      <div class="ach-desc">Qualified for the International Mathematical Olympiad national level through PRMO &rarr; RMO stages. Ranked among <strong>top 300 students in India</strong> (2018) &mdash; a rare mathematical achievement.</div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="sec-label">Social proof</div>
-  <h2 class="sec-title">What people say</h2>
-  <p class="sec-sub">Feedback from research supervisors, collaborators, and peers.</p>
-  <div class="test-grid" style="grid-template-columns:1fr 1fr;">
-    <div class="tcard reveal">
-      <div class="qmark">"</div>
-      <p class="ttext">Nishant's ability to implement and tune ML models is impressive. His work on the protein&ndash;ligand predictor at NIELIT was methodical, data-driven, and produced genuinely strong research-grade results.</p>
-      <div class="tauthor">
-        <div class="av av2">NS</div>
-        <div><div class="aname">Research Supervisor</div><div class="arole">NIELIT Guwahati &middot; Bioinformatics &amp; ML</div></div>
-      </div>
-    </div>
-    <div class="tcard reveal rd2">
-      <div class="qmark">"</div>
-      <p class="ttext">The IoT surveillance system Nishant built was rock solid &mdash; real-time push alerts, clean firmware, and 99% uptime in testing. He builds things that actually work and measures what matters.</p>
-      <div class="tauthor">
-        <div class="av av3">RC</div>
-        <div><div class="aname">Project Collaborator</div><div class="arole">Robotics Society &middot; Tezpur University</div></div>
-      </div>
+      <div class="ach-desc">Qualified for the Indian National Mathematical Olympiad through the PRMO &rarr; RMO stages. Ranked among <strong>top 300 students in India</strong> (2018).</div>
     </div>
   </div>
 </section>
@@ -547,25 +586,25 @@
     <p class="csub">Open to research internships, ML collaboration, frontend projects, and data engineering opportunities. Based in Assam &mdash; available for remote work worldwide and onsite roles across India.</p>
     <form class="cform reveal" id="contactForm">
       <div class="form-row">
-        <input type="text" class="finput" placeholder="Your Name" required />
-        <input type="email" class="finput" placeholder="Your Email" required />
+        <input type="text" class="finput" id="fname" placeholder="Your Name" aria-label="Your name" required />
+        <input type="email" class="finput" id="femail" placeholder="Your Email" aria-label="Your email" required />
       </div>
-      <input type="text" class="finput" placeholder="Subject" />
-      <textarea class="finput" placeholder="Your message..." required></textarea>
+      <input type="text" class="finput" id="fsubject" placeholder="Subject" aria-label="Subject" />
+      <textarea class="finput" id="fmsg" placeholder="Your message..." aria-label="Your message" required></textarea>
       <button type="submit" class="fsubmit">Send Message &#8594;</button>
     </form>
     <div class="clinks reveal rd2">
-      <a href="https://linkedin.com/in/nishant-sinha" class="slink" target="_blank">
+      <a href="https://linkedin.com/in/nishantsinha" class="slink" target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         LinkedIn
       </a>
-      <a href="https://github.com" class="slink" target="_blank">
+      <a href="https://github.com/Hawksy274" class="slink" target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub
       </a>
-      <a href="mailto:nishantsinha3580@gmail.com" class="slink">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        nishantsinha3580&#64;gmail.com
+      <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=nishantsinha3580%40gmail.com&amp;su=Hello%20Nishant" class="slink" target="_blank" rel="noopener" aria-label="Email Nishant on Gmail">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        Gmail
       </a>
       <a href="tel:+919365546261" class="slink">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.55 2 2 0 0 1 3.58 1.34h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
@@ -576,7 +615,7 @@
 </section>
 
 <footer>
-  <span>&#169; 2025 <a href="#hero">Nishant Sinha</a>. All rights reserved.</span>
+  <span>&#169; 2026 <a href="#hero">Nishant Sinha</a>. All rights reserved.</span>
   <span>B.Tech ECE &middot; Tezpur University &middot; Class of 2027</span>
 </footer>
 
@@ -585,13 +624,13 @@
   let mx=0,my=0,rx=0,ry=0;
   document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; cursor.style.left=mx+'px'; cursor.style.top=my+'px'; });
   (function loop(){ rx+=(mx-rx)*.12; ry+=(my-ry)*.12; ring.style.left=rx+'px'; ring.style.top=ry+'px'; requestAnimationFrame(loop); })();
-  document.querySelectorAll('a,button,.skill-tab,.proj-card,.acard,.tcard,.icard').forEach(el=>{
+  document.querySelectorAll('a,button,.skill-tab,.proj-card,.acard,.icard').forEach(el=>{
     el.addEventListener('mouseenter',()=>document.body.classList.add('hovering'));
     el.addEventListener('mouseleave',()=>document.body.classList.remove('hovering'));
   });
   window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',scrollY>50));
   const obs = new IntersectionObserver(entries=>{
-    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); e.target.querySelectorAll('.ski-fill').forEach(b=>b.style.width=b.dataset.width+'%'); } });
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); } });
   },{threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
   document.querySelectorAll('.skill-tab').forEach(tab=>{
@@ -601,12 +640,19 @@
       tab.classList.add('active');
       const panel=document.getElementById('panel-'+tab.dataset.tab);
       panel.classList.add('active');
-      panel.querySelectorAll('.ski-fill').forEach(b=>{ b.style.width='0'; setTimeout(()=>b.style.width=b.dataset.width+'%',50); });
     });
   });
-  setTimeout(()=>document.querySelectorAll('#panel-ml .ski-fill').forEach(b=>b.style.width=b.dataset.width+'%'),500);
   document.getElementById('contactForm').addEventListener('submit',e=>{
     e.preventDefault();
+    const to='nishantsinha3580@gmail.com';
+    const name=document.getElementById('fname').value.trim();
+    const email=document.getElementById('femail').value.trim();
+    const subject=document.getElementById('fsubject').value.trim() || ('Portfolio enquiry from ' + name);
+    const body=document.getElementById('fmsg').value.trim() + '\n\n' + name + ' (' + email + ')';
+    const gmail='https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    const w=window.open(gmail,'_blank');
+    if(w){ w.opener=null; }
+    else { window.location.href='mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body); }
     const t=document.getElementById('toast');
     t.classList.add('show');
     setTimeout(()=>t.classList.remove('show'),3500);
